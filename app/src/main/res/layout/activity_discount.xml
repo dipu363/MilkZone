@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/group_button_dialog_focused_holo_dark"
+    android:orientation="vertical"
+    tools:context=".DiscountActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="100dp"
+            android:weightSum="5">
+
+
+            <EditText
+                android:id="@+id/dis_valid_id"
+                style="@style/edit_text_style_1"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="Discount Valid Up To"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_dis_valid_date_id"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:text="...."
+                android:textAlignment="center"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/dis_parcenteg_id"
+            style="@style/edit_text_style_1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edt_email"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:hint="Discount percentage"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnDisaddid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/btnDisCancelid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

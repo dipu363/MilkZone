@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RadioButtonActivity">
+
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:text="Select Your Course"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdbJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="Java" />
+
+        <RadioButton
+            android:id="@+id/rdbPython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="Python" />
+
+        <RadioButton
+            android:id="@+id/rdbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="Android" />
+
+        <RadioButton
+            android:id="@+id/rdbAngular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="AngularJS" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdGroup"
+        android:layout_marginLeft="100dp"
+        android:text="Get Course" />
+
+</LinearLayout>

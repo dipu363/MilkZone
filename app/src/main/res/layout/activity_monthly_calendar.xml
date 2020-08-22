@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:orientation="vertical"
+
+    tools:context=".CalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/monthlycalendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFEB3B"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay" />
+
+
+        <!--  <TextView
+              android:padding="10dp"
+              android:textColor="@color/black"
+              android:id="@+id/monthlycalendertextid"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/robotoregular"
+              android:gravity="left"
+              android:text="fdffghdghfghgg"
+              android:textSize="18sp"
+              android:typeface="normal" />-->
+
+
+        <Button
+            android:id="@+id/btn_monthlycalendar_dates"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Confirm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">  MilkZone</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Milk Zone</string>
+    <string name="nav_header_subtitle">giyasuddin636@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">User Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no1">Phone No</string>
+    <string name="signup">SignUp</string>
+    <string name="address">Address</string>
+    <string name="contact">Contact : 01933932636</string>
+    <string name="customer_name">name :</string>
+    <string name="couAddress">Address :</string>
+    <string name="contactno">Contact :</string>
+    <string name="QTy">Quantity(Ltr)</string>
+    <string name="copon">Copon ID</string>
+    <string name="addrate">Add Milk Rate</string>
+
+    <string name="agora_app_id">bf2109879cc44534b6f8e5f6c48e0173</string>
+    <string name="agora_app_name">milkzone</string>
+
+
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="fcm_message">Milk Zone</string>
+    <string name="cardOption1">User Info</string>
+    <string name="cardOption2"> Current User </string>
+    <string name="cardOption3">Order</string>
+    <string name="cardOption4">Production</string>
+    <string name="usercardOption1">Profile</string>
+    <string name="usercardOption2">Order</string>
+    <string name="usercardOption3">Recent</string>
+    <string name="usercardOption4">LogOut</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

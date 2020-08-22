@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/userphoto" />
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userPhoto"
+            android:background="@drawable/baground_left"
+            android:padding="5dp"
+            android:text="hello"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

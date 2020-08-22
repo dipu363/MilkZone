@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/messagetoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/messageUserPhoto"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/userphoto"
+                    app:civ_border_color="#E91E63"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#3C4237"
+                    app:civ_shadow_radius="10" />
+
+                <TextView
+                    android:id="@+id/messageusertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/messageUserPhoto"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="dipu"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnaudiocall"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnvideocall"
+                    android:background="@drawable/ic_phoneaudiocall"
+                    android:backgroundTint="@color/Aqua" />
+
+
+                <ImageButton
+                    android:id="@+id/btnvideocall"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_videocall"
+                    android:backgroundTint="@color/Aqua" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagerecycalviewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/appbarlayout">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/messagetextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnsendmessege"
+            android:background="@color/Transparent"
+            android:hint="Type Your Message  . . . . . ."
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnsendmessege"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_sendmessage" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

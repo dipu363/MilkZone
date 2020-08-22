@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/group_button_dialog_focused_holo_dark"
+    android:orientation="vertical"
+    tools:context=".DailyProdutionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pro_dateid"
+            style="@style/edit_text_style_1"
+            android:layout_below="@+id/edit_name"
+            android:layout_gravity="left"
+            android:layout_marginTop="100dp"
+            android:hint="Production Date"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Cow Title"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerProperty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/pro_morningQtyid"
+            style="@style/edit_text_style_1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edt_email"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:hint="Morning Quantity "
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pro_EveningQtyid"
+            style="@style/edit_text_style_1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edt_email"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:hint="Evening Quantity"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnpro_addid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/btnpro_Cancelid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <Button
+
+
+            android:id="@+id/btnshowdailyproductionid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimary"
+            android:text="Show Daily Production"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+
+    </LinearLayout>
+</LinearLayout>
