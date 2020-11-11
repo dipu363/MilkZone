@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.dipu.milkzone.Model.Chat;
+import com.dipu.milkzone.Model.ChatModel;
 import com.dipu.milkzone.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,12 +21,12 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     public static final int MSG_TYPE_LEFT = 0;
     public static final int MSG_TYPE_RIGHT = 1;
     FirebaseUser fUser;
-    private Context mContext;
-    private List<Chat> mChat;
-    private String imageUrl;
+    private final Context mContext;
+    private final List<ChatModel> mChatModel;
+    private final String imageUrl;
 
-    public MessageAdapter(Context mContext, List<Chat> mChat, String imageUrl) {
-        this.mChat = mChat;
+    public MessageAdapter(Context mContext, List<ChatModel> mChatModel, String imageUrl) {
+        this.mChatModel = mChatModel;
         this.mContext = mContext;
         this.imageUrl = imageUrl;
 
@@ -56,8 +56,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull MessageAdapter.ViewHolder viewHolder, final int i) {
 
-        Chat chat = mChat.get(i);
-        viewHolder.show_msg.setText(chat.getMessage());
+        ChatModel chatModel = mChatModel.get(i);
+        viewHolder.show_msg.setText(chatModel.getMessage());
         Glide.with(mContext).load(imageUrl).into(viewHolder.profile_image);
 
 
@@ -65,13 +65,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return mChat.size();
+        return mChatModel.size();
     }
 
     @Override
     public int getItemViewType(int position) {
         fUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (mChat.get(position).getSender().equals(fUser.getUid())) {
+        if (mChatModel.get(position).getSender().equals(fUser.getUid())) {
             return MSG_TYPE_RIGHT;
         } else {
         }

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/group_button_dialog_focused_holo_dark"
     android:padding="10dp"
-    tools:context=".CowListActivity">
+    tools:context=".List.CowListActivity">
 
     <ListView
         android:id="@+id/cowlistviewid"

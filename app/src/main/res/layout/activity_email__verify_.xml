@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Email_Verify_Activity">
+    tools:context=".Auth.Email_Verify_Activity">
 
     <TextView
 

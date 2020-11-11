@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.dipu.milkzone.Model.UserModel;
 import com.dipu.milkzone.R;
-import com.dipu.milkzone.UserModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -24,8 +24,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     FirebaseAuth mAuth;
     FirebaseUser currentuser;
-    private Context mContext;
-    private List<UserModel> mUsers;
+    private final Context mContext;
+    private final List<UserModel> mUsers;
 
     public UserAdapter(Context mContext, List<UserModel> mUsers) {
         this.mUsers = mUsers;

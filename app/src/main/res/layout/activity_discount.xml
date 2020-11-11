@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/group_button_dialog_focused_holo_dark"
     android:orientation="vertical"
-    tools:context=".DiscountActivity">
+    tools:context=".UI.DiscountActivity">
 
 
     <LinearLayout
@@ -39,6 +39,7 @@
                 android:background="@color/white"
                 android:text="...."
                 android:textAlignment="center"
+                android:gravity="center_horizontal"
                 android:textColor="@color/red" />
 
         </LinearLayout>

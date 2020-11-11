@@ -20,7 +20,7 @@ public class UserProfileFragment extends Fragment {
     FirebaseUser fuser;
     DatabaseReference db_user;
     private ImageView userProfielimage;
-    private TextView userfrofilename;
+    private TextView userfrofilename, useremail;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
@@ -31,6 +31,7 @@ public class UserProfileFragment extends Fragment {
 
         userProfielimage = view.findViewById(R.id.profile_photo_user);
         userfrofilename = view.findViewById(R.id.profileusername);
+        useremail = view.findViewById(R.id.profileuseremail);
         fuser = FirebaseAuth.getInstance().getCurrentUser();
         db_user = FirebaseDatabase.getInstance().getReference("UsersInfo").child(fuser.getUid());
       /*  db_user.addValueEventListener(new ValueEventListener() {
@@ -48,6 +49,7 @@ public class UserProfileFragment extends Fragment {
         });*/
 
         userfrofilename.setText(fuser.getDisplayName());
+        useremail.setText(fuser.getEmail());
         Glide.with(UserProfileFragment.this).load(fuser.getPhotoUrl()).into(userProfielimage);
         return view;
     }

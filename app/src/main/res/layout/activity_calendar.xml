@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary"
 
     android:orientation="vertical"
-    tools:context=".CalendarActivity">
+    tools:context=".UI.CalendarActivity">
 
     <com.squareup.timessquare.CalendarPickerView
         android:id="@+id/calendar_view"

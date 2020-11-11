@@ -23,37 +23,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoCallActivity"></activity>
-        <activity android:name=".MessengerActivity" />
+        <activity android:name=".Chat.VideoCallActivity"></activity>
+        <activity android:name=".Chat.MessengerActivity" />
         <activity
-            android:name=".MessageActivity"
+            android:name=".Chat.MessageActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Email_Verify_Activity" />
-        <activity android:name=".Current_user_list_Activity" />
-        <activity android:name=".OrderListActivity" />
-        <activity android:name=".AdminLoginActivity" />
-        <activity android:name=".RadioButtonActivity" />
-        <activity android:name=".MonthlyCalendarActivity" />
-        <activity android:name=".CalendarActivity" />
-        <activity android:name=".Milk_Rate_ListActivity" />
-        <activity android:name=".ProductionListActivity" />
-        <activity android:name=".CowListActivity" />
-        <activity android:name=".CowDetailsActivity" />
-        <activity android:name=".DailyProdutionActivity" />
-        <activity android:name=".DiscountActivity" />
-        <activity android:name=".MilkRateActivity" />
-        <activity android:name=".TestActivity" />
-        <activity android:name=".UserInfoActivity" />
-        <activity android:name=".BillActivity" />
-        <activity android:name=".AdminPanelActivity" />
-        <activity android:name=".OrderActivity" />
-        <activity android:name=".UserHomeActivity" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".LoginAs" />
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Auth.Email_Verify_Activity" />
+        <activity android:name=".List.Current_user_list_Activity" />
+        <activity android:name=".List.OrderListActivity" />
+        <activity android:name=".Auth.AdminLoginActivity" />
+        <activity android:name=".UI.RadioButtonActivity" />
+        <activity android:name=".UI.MonthlyCalendarActivity" />
+        <activity android:name=".UI.CalendarActivity" />
+        <activity android:name=".List.Milk_Rate_ListActivity" />
+        <activity android:name=".List.ProductionListActivity" />
+        <activity android:name=".List.CowListActivity" />
+        <activity android:name=".UI.CowDetailsActivity" />
+        <activity android:name=".UI.DailyProdutionActivity" />
+        <activity android:name=".UI.DiscountActivity" />
+        <activity android:name=".UI.MilkRateActivity" />
+        <activity android:name=".UI.TestActivity" />
+        <activity android:name=".UI.Userpanel.UserInfoActivity" />
+        <activity android:name=".UI.BillActivity" />
+        <activity android:name=".UI.Adminpanel.AdminPanelActivity" />
+        <activity android:name=".UI.OrderActivity" />
+        <activity android:name=".UI.Userpanel.UserHomeActivity" />
+        <activity android:name=".Auth.SignUp" />
+        <activity android:name=".Auth.LoginAs" />
+        <activity android:name=".Auth.LogInActivity" />
+        <activity android:name=".UI.MainActivity" />
         <activity
-            android:name=".Splash_Screen"
+            android:name=".UI.Splash_Screen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -63,7 +63,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".FirebasenotificationService">
+        <service android:name=".Helper.FirebasenotificationService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dipu.milkzone.Adapter.UserAdapter;
+import com.dipu.milkzone.Model.UserModel;
 import com.dipu.milkzone.R;
-import com.dipu.milkzone.UserModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
